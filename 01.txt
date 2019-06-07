@@ -1,0 +1,28 @@
+Sub 删除特定表的特定内容()
+msg = MsgBox("将删除以下内容：" & vbCrLf & " 1. '03.入职明细'+ '02附.离职明细'+'04.异动明细': A2-W10000" & vbCrLf & vbCrLf & "2. 从“总一”到“管理”的相关内容", vbOKCancel, "警告！")
+
+If msg = vbOK Then
+    Sheets("03.入职明细").Range("A2:W10000").ClearContents
+    Sheets("02附.离职明细").Range("A2:W10000").ClearContents
+    Sheets("04.异动明细").Range("A2:Z10000").ClearContents
+    Sheets("总一").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#1
+    Sheets("总二").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#2
+    Sheets("总一").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#3
+    Sheets("总三").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#4
+    Sheets("高端分厂").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#5
+    Sheets("电子").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#6
+    Sheets("钣金").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#7
+    Sheets("注塑").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#8
+    Sheets("生产").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#9
+    Sheets("物流改善项目").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#10
+    Sheets("散件").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#11
+    Sheets("离合器车间").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#12
+    Sheets("品质").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#13
+    Sheets("模具").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#14
+    Sheets("工程").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#15
+    Sheets("财务").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#16
+    Sheets("管理").Range("AC6:AG36，AI6:AM36,BC6:BG36").ClearContents   '#17
+End If
+
+End Sub
+
